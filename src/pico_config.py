@@ -3,7 +3,7 @@ from dataclasses import dataclass
 @dataclass
 class picoConfig:
     """Class for loading and saving hyperparameters for picoGPT training and inference."""
-    context_size: int = 512
+    max_len: int = 512
     vocab_size: int = 100352
     n_layers: int = 12
     n_heads: int = 12
